@@ -6,17 +6,17 @@
 
 <script setup>
 
-import { ref, onBeforeMount, onMounted } from 'vue';
-const pokemon = ref("");
-async function getPokemon(){
+import { ref, onMounted } from 'vue';
+const abc = ref("");
+async function getData(){
   let res = await fetch("https://data.cityofnewyork.us/resource/jb7j-dtam.json");
   let data = await res.json();
-  pokemon.value = data.results;
+  abc.value = data.results;
 
 }
 
 onMounted(() => {
-  getPokemon()
+  getData()
 })
 </script>
 <style>
