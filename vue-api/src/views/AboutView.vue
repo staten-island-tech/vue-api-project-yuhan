@@ -7,7 +7,7 @@
 
 <script setup>
 
-import { ref, onBeforeMount, onMounted } from 'vue';
+import { ref, onMounted } from 'vue';
 
 const abc = ref("");
 async function getData(){
