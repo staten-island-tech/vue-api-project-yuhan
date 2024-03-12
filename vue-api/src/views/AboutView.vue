@@ -1,11 +1,8 @@
 <template>
-  <div class="about">
-    <h1>Chart</h1>
-  </div>
-  <div style="width: 800px;"><canvas id="acquisitions"></canvas></div>
+ <BarChart />
 </template>
 
-<script setup>
+<script>
 
 import { ref, onMounted } from 'vue';
 
@@ -21,6 +18,12 @@ onMounted(() => {
   getData()
 })
 
+import BarChart from '../components/BarChart.vue'
+
+export default {
+  name: 'App',
+  components: { BarChart }
+}
 
 
 </script>
