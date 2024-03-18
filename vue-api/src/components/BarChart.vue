@@ -7,7 +7,7 @@
 </template>
 
 <script>
-import { Bar,} from "vue-chartjs";
+import { Bar} from "vue-chartjs";
 import { Chart as ChartJS, Title, Tooltip, Legend, CategoryScale, LinearScale, } from 'chart.js'
 
 ChartJS.register(Bar, Title, Tooltip, Legend, CategoryScale, LinearScale)
