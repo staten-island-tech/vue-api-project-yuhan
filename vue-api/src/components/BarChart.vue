@@ -13,7 +13,7 @@ import { Chart as ChartJS, Title, Tooltip, Legend, CategoryScale, LinearScale, }
 ChartJS.register(Bar, Title, Tooltip, Legend, CategoryScale, LinearScale)
 
 
-const BarChart = {
+export default  {
     name: 'BarChart',
     components: { Bar }, 
     data(){
@@ -29,5 +29,5 @@ const BarChart = {
         }
     }
 }
-export default BarChart
+
 </script>
