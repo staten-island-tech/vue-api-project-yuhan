@@ -1,10 +1,9 @@
 <template>
-  <div class="about">
-    <h1>This is an about page</h1>
-  </div>
+ <BarChart>  </BarChart> Chart couldn't be loaded.
 </template>
 
-<script setup>
+<script>
+import BarChart from '../components/BarChart.vue';
 
 import { ref, onMounted } from 'vue';
 const abc = ref("");
@@ -18,13 +17,9 @@ async function getData(){
 onMounted(() => {
   getData()
 })
+
+
 </script>
 <style>
-@media (min-width: 1024px) {
-  .about {
-    min-height: 100vh;
-    display: flex;
-    align-items: center;
-  }
-}
+
 </style>
