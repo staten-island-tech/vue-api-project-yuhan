@@ -18,7 +18,6 @@ onMounted(() => {
   getData()
 })
 
-
 </script>
 <style>
 
