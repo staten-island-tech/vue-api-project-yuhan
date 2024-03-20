@@ -1,5 +1,5 @@
 <template>
- <BarChart>  </BarChart> Chart couldn't be loaded.
+ <BarChart></BarChart> Chart couldn't be loaded.
 </template>
 
 <script>
@@ -17,6 +17,11 @@ async function getData(){
 onMounted(() => {
   getData()
 })
+
+ export default {
+  name: 'App',
+  components: { BarChart }
+} 
 
 </script>
 <style>

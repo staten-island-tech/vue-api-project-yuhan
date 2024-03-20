@@ -17,4 +17,5 @@ async function getData(){
 </script>
 
 <template>
+
   </template>

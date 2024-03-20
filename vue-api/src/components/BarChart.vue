@@ -10,8 +10,8 @@
 import { Bar} from "vue-chartjs";
 import { Chart as ChartJS, Title, Tooltip, Legend, CategoryScale, LinearScale, } from 'chart.js'
 
-ChartJS.register(Bar, Title, Tooltip, Legend, CategoryScale, LinearScale)
 
+ChartJS.register(Bar, Title, Tooltip, Legend, CategoryScale, LinearScale)
 
 const BarChart = {
     name: 'BarChart',
@@ -19,9 +19,9 @@ const BarChart = {
     data(){
         return{
             chartData: {
-                labels: ['January', 'February', 'March'],
+                labels: ['a', 'b', 'c'],
                 datasets: [ {
-                data: [40, 20, 12]}]
+                data: [1, 2, 3]}]
             },
             chartOptions: {
                 responsive: true
