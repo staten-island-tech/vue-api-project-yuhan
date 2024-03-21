@@ -5,8 +5,8 @@ const abc = ref("");
 async function getData(){
   let res = await fetch("https://data.cityofnewyork.us/resource/jb7j-dtam.json");
   let data = await res.json();
-  abc.value = data.results;
-  console.log(data)
+  let deds = data.leading_cause
+  console.log(deds)
 }
   onMounted(() => {
   getData()
@@ -17,4 +17,5 @@ async function getData(){
 </script>
 
 <template>
+
   </template>
