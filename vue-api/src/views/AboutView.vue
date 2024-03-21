@@ -1,4 +1,4 @@
-<template>
+<!-- <template>
  <BarChart></BarChart> Chart couldn't be loaded.
 </template>
 
@@ -6,19 +6,25 @@
 import BarChart from '../components/BarChart.vue';
 
 
+ export default {
 
-
-export default {
-  name: 'App', 
   components: { BarChart }
-}
-
-onMounted(() => {
-  getData()
-})
-
+} 
 
 </script>
 <style>
 
 </style>
+ -->
+<template>
+  Hello
+  <BarChart/>
+</template>
+<script>
+  import BarChart from '@/components/BarChart.vue';
+
+  export default {
+  name: 'App',
+  components: { BarChart }
+}
+</script>
