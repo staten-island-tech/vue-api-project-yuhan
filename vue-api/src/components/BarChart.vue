@@ -26,6 +26,8 @@ export default  {
                 labels: this.labels,
                 datasets: [ 
                     {
+                        label: 'Number Of Deaths',
+                        backgroundColor: '#ADD8E6',
                         data: this.data
                     }
                 ]
