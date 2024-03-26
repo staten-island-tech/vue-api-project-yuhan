@@ -9,7 +9,8 @@ export default  {
     name: 'PieChart',
     components: { Pie }, 
     props: {
-  
+    data: Array,
+    labels: Array,
   },
     data(){
         return{
@@ -32,3 +33,10 @@ export default  {
 }
 
 </script>
+<template>
+     <Pie
+  id="my-chart-id"
+  :options="chartOptions"
+  :data="chartData"
+  />
+</template>
