@@ -11,8 +11,8 @@ import HelloWorld from './components/HelloWorld.vue'
     
 <h1 id="head">Deaths by Year in NYC</h1>
       <nav>
-        <RouterLink to="/about">Bar Chart</RouterLink>
-        <RouterLink to="/">Pie Chart</RouterLink>
+        <RouterLink to="/about">Bar Chart for dead people</RouterLink>
+        <RouterLink to="/">Pie Chart for more dead people</RouterLink>
        
       </nav>
     </div>
